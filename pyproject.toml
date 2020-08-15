@@ -1,0 +1,47 @@
+[build-system]
+requires = ["flit_core >=2,<4"]
+build-backend = "flit_core.buildapi"
+
+[tool.flit.metadata]
+module = "cls_var_behavior"
+author = "Brent Wilkins"
+author-email = "brent@wilkins.in"
+home-page = "https://github.com/BrentWilkins/cls_var_behavior"
+classifiers = [
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License"
+]
+description-file="README.rst"
+
+[tool.flit.metadata.requires-extra]
+test = [
+    "pytest",
+    "pytest-cov",
+]
+
+dev = [
+    "cohesion",
+    "flake8",
+    "flake8-annotations",
+    "flake8-annotations-coverage",
+    "flake8-broken-line",
+    "flake8-bugbear",
+    "flake8-builtins",
+    "flake8-comprehensions",
+    "flake8-docstrings",
+    "flake8-eradicate",
+    "flake8-fixme",
+    "flake8-import-order",
+    "flake8-pep3101",
+    "flake8-printf-formatting",
+    "flake8-pytest",
+    "flake8-pytest-style",
+    "flake8-quotes",
+    "flake8-requirements",
+    "flake8-rst-docstrings",
+    "flake8-spellcheck",
+    "flake8-typing-imports",
+    "flake8-use-fstring",
+    "flake8-variables-names",
+]
